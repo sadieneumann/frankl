@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>In Search of Meaning: Community and Meaning in a Challenging World</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.timeline .event {
+				margin-bottom: 20px;
+				border-left: 2px solid #333;
+				padding-left: 20px;
+				position: relative;
+			}
+			.timeline .event:before {
+				content: '';
+				width: 10px;
+				height: 10px;
+				background: #333;
+				border-radius: 50%;
+				position: absolute;
+				left: -6px;
+				top: 5px;
+			}
+			.quiz .question {
+				margin-bottom: 20px;
+			}
+			.quiz ul {
+				list-style-type: none;
+				padding-left: 0;
+			}
+			.quiz li {
+				margin-bottom: 10px;
+			}
+			.content-wrapper {
+				display: flex;
+				align-items: flex-start;
+			}
+			.content-text {
+				flex: 1;
+				padding-right: 20px;
+			}
+			.content-image {
+				flex: 0 0 300px;
+				text-align: center;
+			}
+			.content-image img {
+				max-width: 100%;
+				height: auto;
+			}
+			.image-caption {
+				margin-top: 10px;
+				font-style: italic;
+			}
+		</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var content = document.getElementById('content');
+				content.innerHTML = `
+					<div class="content-wrapper">
+						<div class="content-text">
+							<h2>To what extent does community create meaning in a world with so many painful and difficult circumstances?</h2>
+							<p>Throughout history, humans have endured and inflicted great suffering, and time and time again, we have relied on our communities to find meaning and purpose during hardships. In the 21st century, humans have the easiest life on average; there are plentiful foods, resources, and unprecedented access to information. Yet, there is still much suffering in war, extreme poverty, natural disasters, and so on. In these painful and difficult circumstances, communities become essential in creating meaning for individuals.</p>
+									<p>Humans return to their communities in times of hardship for guidance, energy, help, and general support. Suffering is inherently isolation, so taking part in a community gives people a connection, a "reason" for their suffering, and a sense of belonging. Viktor Frankl, in his search for the meaning of life, found the importance of community and camaraderie; for many, the connection is their purpose. He saw that even in the worst circumstances, such as concentration camps, people found meaning through mutual support and shared experiences. Community provides connection and a sense of belonging, helping members avoid isolation. Connection is always important, but it becomes crucial during times of suffering. Being part of a community gives people an identity, values, meaning, and friends. Through shared purpose and identity, people overcome their suffering and realize that they are part of and contribute to something much larger. The need for friendship is so integral to the human experience that, without it, people often become depressed.</p>
+									<p>Communities also tend to be built around something: education, volunteering, support, or any number of other things. In times of hardship, these shared activities and goals provide individuals with a sense of purpose and direction. One issue that the world is starting to face more and more is that with advanced technology, we have less to do and fewer challenges to overcome. This means that without community, there would be much less meaning and fewer opportunities for engagement. Communities force people to think beyond their own problems and instead focus on their group or purpose. Communities compel individuals to think about the well-being of their group and contribute, shifting focus away from personal suffering and difficulties. Additionally, in times of need or crisis, communities are a built-in support system and safety net. In times of hardship, communities often come together to provide meals, financial help, or emotional support. Having this kind of supportive network is what helps people persevere through difficult times.</p>
+									<p>Communities also build cultural support and values, mostly positive (though sometimes negative, like the Mafia). However, there are also many incredible groups, such as Baca (Bikers Against Child Abuse), that are growing in popularity. These positive communities help shift people's mindset (as with self-betterment groups), enhance culture, or even provide members with a sense of purpose. They help people see their suffering as part of something bigger, giving it a shared meaning that can turn personal pain into a source of strength for the whole group. These communities help to shape and shift the narratives people tell themselves about their suffering and allow them to connect with others who share similar stories. Social change often stems from communities and can lead to significant improvements in the world (e.g., women suing the state for abortion rights, community service, and creating functional art). By actively participating in a community, people can find meaning in positive efforts and growth, helping to alleviate and distract from any suffering. Communities teach people compassion, empathy, and an understanding of those around them, both within and outside of their group.</p>
+									<p>Community-driven empathy encourages individuals to see their pain as part of a larger human experience, offering a sense of shared meaning. Viktor Frankl spent his life trying to find and understand meaning, and he realized the crucial role of community in helping individuals find meaning even in the worst circumstances, such as concentration camps. There, in one of the worst times of suffering ever, people still found meaning in mutual support and shared experiences. Frankl found that meaning often comes from love, responsibility to others, and spiritual reflection—all of which are often a central part of communities. Communities provide a structure for individuals to engage in creative pursuits, service, and spiritual reflection, which Frankl identified as key to finding meaning in suffering. By focusing on the needs of others within the community, people tend to put aside their own suffering and instead find purpose in contributing to their community or the greater good. Engaging in a community is one of the most important keys to success and happiness for people. Even in the darkest of times, it gives people distraction, support, or routine. People without communities suffer greatly because, without connection, there is little meaning. Community is crucial to the well-being of people as well as in enduring any hardship that may come your way.</p>
+									<p>Communities play a big role in helping people find meaning in a world full of pain and challenges. Even during COVID-19, people though isolated, found meaning in a community in all sorts of meaningful ways. People went online, left art for others to find, or even made deeper connections within their families. By giving people connection, purpose, and a sense of belonging, communities help them understand their struggles and find reasons to keep going. The shared experiences and support in communities turn personal hardships into sources of strength and purpose, showing how important communities are in our lives.</p>
+									<p><i>"There is nothing in the world, I venture to say, that would so effectively help one to survive even the worst conditions as the knowledge that there is a meaning in one's life."</i></p>
+									<p><i>– Viktor Frankl</i></p>
+						</div>
+						<div class="content-image">
+							<img src="assets/images/viktor_frankl.jpg" alt="Viktor E. Frankl">
+							<p class="image-caption">Viktor E. Frankl</p>
+						</div>
+					</div>
+				`;
+
+				var mainTitle = document.querySelector('h1 a');
+				mainTitle.addEventListener('click', function(e) {
+					e.preventDefault();
+					content.innerHTML = `
+						<div class="content-wrapper">
+							<div class="content-text">
+								<h2>To what extent does community create meaning in a world with so many painful and difficult circumstances?</h2>
+								<p>Throughout history, humans have endured and inflicted great suffering, and time and time again, we have relied on our communities to find meaning and purpose during hardships. In the 21st century, humans have the easiest life on average; there are plentiful foods, resources, and unprecedented access to information. Yet, there is still much suffering in war, extreme poverty, natural disasters, and so on. In these painful and difficult circumstances, communities become essential in creating meaning for individuals.</p>
+									<p>Humans return to their communities in times of hardship for guidance, energy, help, and general support. Suffering is inherently isolation, so taking part in a community gives people a connection, a "reason" for their suffering, and a sense of belonging. Viktor Frankl, in his search for the meaning of life, found the importance of community and camaraderie; for many, the connection is their purpose. He saw that even in the worst circumstances, such as concentration camps, people found meaning through mutual support and shared experiences. Community provides connection and a sense of belonging, helping members avoid isolation. Connection is always important, but it becomes crucial during times of suffering. Being part of a community gives people an identity, values, meaning, and friends. Through shared purpose and identity, people overcome their suffering and realize that they are part of and contribute to something much larger. The need for friendship is so integral to the human experience that, without it, people often become depressed.</p>
+									<p>Communities also tend to be built around something: education, volunteering, support, or any number of other things. In times of hardship, these shared activities and goals provide individuals with a sense of purpose and direction. One issue that the world is starting to face more and more is that with advanced technology, we have less to do and fewer challenges to overcome. This means that without community, there would be much less meaning and fewer opportunities for engagement. Communities force people to think beyond their own problems and instead focus on their group or purpose. Communities compel individuals to think about the well-being of their group and contribute, shifting focus away from personal suffering and difficulties. Additionally, in times of need or crisis, communities are a built-in support system and safety net. In times of hardship, communities often come together to provide meals, financial help, or emotional support. Having this kind of supportive network is what helps people persevere through difficult times.</p>
+									<p>Communities also build cultural support and values, mostly positive (though sometimes negative, like the Mafia). However, there are also many incredible groups, such as Baca (Bikers Against Child Abuse), that are growing in popularity. These positive communities help shift people's mindset (as with self-betterment groups), enhance culture, or even provide members with a sense of purpose. They help people see their suffering as part of something bigger, giving it a shared meaning that can turn personal pain into a source of strength for the whole group. These communities help to shape and shift the narratives people tell themselves about their suffering and allow them to connect with others who share similar stories. Social change often stems from communities and can lead to significant improvements in the world (e.g., women suing the state for abortion rights, community service, and creating functional art). By actively participating in a community, people can find meaning in positive efforts and growth, helping to alleviate and distract from any suffering. Communities teach people compassion, empathy, and an understanding of those around them, both within and outside of their group.</p>
+									<p>Community-driven empathy encourages individuals to see their pain as part of a larger human experience, offering a sense of shared meaning. Viktor Frankl spent his life trying to find and understand meaning, and he realized the crucial role of community in helping individuals find meaning even in the worst circumstances, such as concentration camps. There, in one of the worst times of suffering ever, people still found meaning in mutual support and shared experiences. Frankl found that meaning often comes from love, responsibility to others, and spiritual reflection—all of which are often a central part of communities. Communities provide a structure for individuals to engage in creative pursuits, service, and spiritual reflection, which Frankl identified as key to finding meaning in suffering. By focusing on the needs of others within the community, people tend to put aside their own suffering and instead find purpose in contributing to their community or the greater good. Engaging in a community is one of the most important keys to success and happiness for people. Even in the darkest of times, it gives people distraction, support, or routine. People without communities suffer greatly because, without connection, there is little meaning. Community is crucial to the well-being of people as well as in enduring any hardship that may come your way.</p>
+									<p>Communities play a big role in helping people find meaning in a world full of pain and challenges. Even during COVID-19, people though isolated, found meaning in a community in all sorts of meaningful ways. People went online, left art for others to find, or even made deeper connections within their families. By giving people connection, purpose, and a sense of belonging, communities help them understand their struggles and find reasons to keep going. The shared experiences and support in communities turn personal hardships into sources of strength and purpose, showing how important communities are in our lives.</p>
+									<p><i>"There is nothing in the world, I venture to say, that would so effectively help one to survive even the worst conditions as the knowledge that there is a meaning in one's life."</i></p>
+									<p><i>– Viktor Frankl</i></p>
+							</div>
+							<div class="content-image">
+								<img src="assets/images/viktor_frankl.jpg" alt="Viktor E. Frankl">
+								<p class="image-caption">Viktor E. Frankl</p>
+							</div>
+						</div>
+					`;
+				});
+
+				// Ensure the image is loaded when the page opens
+				var img = new Image();
+				img.onload = function() {
+					document.querySelector('.content-image img').src = this.src;
+				};
+				img.onerror = function() {
+					console.error('Failed to load image: ' + this.src);
+				};
+				img.src = 'assets/images/viktor_frankl.jpg';
+			});
+		</script>
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">In Search of Meaning</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="#" data-page="frankl">Viktor E. Frankl's Life</a></li>
+								<li><a href="#" data-page="logotherapy">What is Logotherapy?</a></li>
+								<li><a href="#" data-page="community">Meaning in Community</a></li>
+								<li><a href="#" data-page="discover">Discover Your Meaning</a></li>
+								<li><a href="#" data-page="citations">Citations</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post" id="content">
+								<!-- Content will be loaded here -->
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<p class="copyright">&copy; In Search of Meaning. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const contentArea = document.getElementById('content');
+					const navLinks = document.querySelectorAll('nav.links a');
+
+					function loadContent(page) {
+						let content = '';
+						switch(page) {
+							case 'frankl':
+								content = `
+									<header>
+										<div class="title">
+											<h2>Viktor E. Frankl's Life</h2>
+										</div>
+									</header>
+									<div class="timeline">
+										<div class="event">
+											<h3>1905</h3>
+											<p>Viktor Frankl was born on March 26 in Vienna, Austria.</p>
+										</div>
+										<div class="event">
+											<h3>1914-1918</h3>
+											<p>World War I; family severely deprived, Frankl children had to beg for food.</p>
+										</div>
+										<div class="event">
+											<h3>1920</h3>
+											<p>Frankl delivered his first speech called "The Meaning of Life."</p>
+										</div>
+										<div class="event">
+											<h3>1926</h3>
+											<p>Gave lectures in Germany on his first concepts of Logotherapy.</p>
+										</div>
+										<div class="event">
+											<h3>1928-1929</h3>
+											<p>Organized free counseling centers in Vienna, which became famous and helped significantly.</p>
+										</div>
+										<div class="event">
+											<h3>1930</h3>
+											<p>Frankl started focusing on suicide prevention at Steinhof Psychiatric Hospital; he directed the "Suicidals Pavilion for Women".</p>
+										</div>
+										<div class="event">
+											<h3>1937</h3>
+											<p>Frankl opened a private practice that was forced to close when the Nazis occupied Austria.</p>
+										</div>
+										<div class="event">
+											<h3>1938</h3>
+											<p>Frankl was forced to use "Israel" as a middle name, lost his medical practice, and faced increasing restrictions.</p>
+										</div>
+										<div class="event">
+											<h3>1941</h3>
+											<p>Marries Tilly Grosser.</p>
+										</div>
+										<div class="event">
+											<h3>1942</h3>
+											<p>Frankl and his family were sent to the Theresienstadt concentration camp; his father died shortly after.</p>
+										</div>
+										<div class="event">
+											<h3>1944</h3>
+											<p>Frankl's wife and mother were killed at Auschwitz. Frankl was sent to labor camps and contracted typhoid fever. Despite this, he continued to find meaning and explore it in others.</p>
+										</div>
+										<div class="event">
+											<h3>1945</h3>
+											<p>Frankl was liberated by U.S. Troops.</p>
+										</div>
+										<div class="event">
+											<h3>1946</h3>
+											<p>Viktor Frankl wrote "Man's Search for Meaning" in 9 days (it went on to sell millions of copies).</p>
+										</div>
+										<div class="event">
+											<h3>1947</h3>
+											<p>Marries Eleonore Katharina Schwindt and has a daughter, Gabriele.</p>
+										</div>
+										<div class="event">
+											<h3>1948</h3>
+											<p>Frankl earned his Ph.D. in philosophy and became an Associate Professor of Neurology and Psychiatry at the University of Vienna.</p>
+										</div>
+										<div class="event">
+											<h3>1950</h3>
+											<p>Logotherapy was recognized as the "Third Viennese School of Psychotherapy," alongside Freud's and Adler's schools.</p>
+										</div>
+										<div class="event">
+											<h3>1991</h3>
+											<p>"Man's Search for Meaning" named one of the ten most influential books in America by the Library of Congress.</p>
+										</div>
+										<div class="event">
+											<h3>1997</h3>
+											<p>Viktor Frankl died on September 2 in Vienna, Austria at 92 years old.</p>
+										</div>
+										<div class="content-image">
+										<img src="assets/images/frankl_family.jpg" alt="Viktor E. Frankl and his family">
+											<p class="image-caption">Viktor E. Frankl and his family</p>
+										</div>
+									</div>
+								`;
+								break;
+							case 'logotherapy':
+								content = `
+									<header>
+										<div class="title">
+											<h2>What is Logotherapy?</h2>
+										</div>
+									</header>
+									<p>Viktor Frankl was the father of logotherapy, a type of psychotherapy that helps its patients find meaning in life. Frankl taught others how to use logotherapy, as well as helped countless people find meaning both within and outside of Nazi concentration camps. Frankl built logotherapy off of three core principles: humans have free will in how they respond to circumstances of any type, the objective main goal of life is to find meaning (not power or pleasure), and this is necessary for overcoming existential emptiness and frustration; everyone must find their own unique meaning so that they can overcome any suffering. Frankl believed that having a strong sense of meaning would allow individuals to overcome anything and persevere through any unavoidable suffering. In life, you must find your meaning to contribute to the world and reach your full capacity. Frankl knew that suffering is unavoidable and needs to be worked through, not deflected; he said, "Suffering is an ineradicable part of life. Without suffering and death, human life cannot be complete."
+</p>
+									<p>Frankl had many techniques in logotherapy to find meaning: deflection, paradoxical intention, and Socratic dialogue. He offers countless examples of all of them throughout his book, helping other prisoners in the camp with him. Deflection makes the patient look beyond their own issues and realize the reason for their suffering and how it is impacting others. Paradoxical intention uses humor and helps to distance a patient from their struggles, allowing them to see what they truly need or want. Socratic dialogue helps patients discover themselves through questions about their struggles rather than distancing themselves from the issue. Logotherapy also offers ways to find meaning: creation of work, art, or anything that contributes to the world; experiences with love, truth, nature, family, and loved ones; and the way that you approach difficult situations and hardships. Frankl worked to improve the lives of everyone around him through logotherapy, helping people work through trauma, depression, or other hardships. Today, logotherapy is still being implemented to help a wide range of individuals dealing with trauma, and it remains effective. Frankl's life work paid off both in the concentration camps, in his own well-being, and in the betterment of the world.
+</p>
+								`;
+								break;
+							case 'community':
+								content = `
+									<header>
+										<div class="title">
+											<h2>Meaning in Community</h2>
+										</div>
+									</header>
+									<p><i>Community: a group of people living in the same place or having a particular characteristic in common; a feeling of fellowship with others, as a result of sharing common attitudes, interests, and goals.
+</i></p>
+									<p>It's a well-known fact that humans need community to feel fulfilled and happy in everyday life; it provides a sense of purpose, belonging, and meaning. Communities—whether at school, at work, in a sport, or a club—shape who someone is and give a person their identity. It is well-documented that people without community often become depressed, apathetic, or even angry. The community strongly influences how people view the world, how they spend their time, and which cultural norms they adhere to, and provides individuals with a sense of belonging. Viktor Frankl spent his life helping others find a sense of meaning, and he discovered that community gives most people a profound sense of it. People spend their lives searching for meaning, for, as one of Frankl's students said, "The meaning of life is to help others find the meaning of theirs" (Frankl, 165). During his time in camps, Frankl realized that community was what helped people get through extreme suffering. Connecting with someone else over shared experiences, physical labor, or talking through a difficult moment offered Frankl a sense of community. Today, community is still just as important, yet as the online world becomes more vast, it seems to be fading. Hold onto your communities, create new ones, and find meaning in your life. Community is one of the most unique and important aspects of human life; few people can succeed or live well without it.
+</p>
+								`;
+								break;
+							case 'discover':
+								content = `
+									<header>
+										<div class="title">
+											<h2>Discover Your Source of Meaning Quiz</h2>
+										</div>
+									</header>
+									<div class="quiz">
+										<div class="question">
+											<h3>1. When faced with adversity, what do you find helps you push through?</h3>
+											<ul>
+												<li><input type="radio" name="q1" id="q1a" value="A"><label for="q1a">Supporting or caring for others</label></li>
+												<li><input type="radio" name="q1" id="q1b" value="B"><label for="q1b">Working toward a future goal</label></li>
+												<li><input type="radio" name="q1" id="q1c" value="C"><label for="q1c">Finding beauty or joy in the present moment</label></li>
+												<li><input type="radio" name="q1" id="q1d" value="D"><label for="q1d">Reflecting on past experiences for strength</label></li>
+											</ul>
+										</div>
+										<div class="question">
+											<h3>2. How do you feel when you're working toward a challenging task?</h3>
+											<ul>
+												<li><input type="radio" name="q2" id="q2a" value="A"><label for="q2a">I focus on how it will benefit others</label></li>
+												<li><input type="radio" name="q2" id="q2b" value="B"><label for="q2b">I'm energized by achieving the goal</label></li>
+												<li><input type="radio" name="q2" id="q2c" value="C"><label for="q2c">I find pleasure in the small steps and process</label></li>
+												<li><input type="radio" name="q2" id="q2d" value="D"><label for="q2d">I think of past accomplishments to remind me I can succeed</label></li>
+											</ul>
+										</div>
+										<div class="question">
+											<h3>3. If you were to describe what gives your life meaning, which statement resonates most?</h3>
+											<ul>
+												<li><input type="radio" name="q3" id="q3a" value="A"><label for="q3a">Meaning comes from love and relationships</label></li>
+												<li><input type="radio" name="q3" id="q3b" value="B"><label for="q3b">Meaning comes from achieving my personal goals</label></li>
+												<li><input type="radio" name="q3" id="q3c" value="C"><label for="q3c">Meaning is found in appreciating the beauty around me</label></li>
+												<li><input type="radio" name="q3" id="q3d" value="D"><label for="q3d">Meaning is drawn from understanding and learning from the past</label></li>
+											</ul>
+										</div>
+										<div class="question">
+											<h3>4. How do you view suffering or hardship in your life?</h3>
+											<ul>
+												<li><input type="radio" name="q4" id="q4a" value="A"><label for="q4a">I see it as a chance to strengthen relationships</label></li>
+												<li><input type="radio" name="q4" id="q4b" value="B"><label for="q4b">I see it as a challenge that can lead to personal growth</label></li>
+												<li><input type="radio" name="q4" id="q4c" value="C"><label for="q4c">I try to find something positive or beautiful within the struggle</label></li>
+												<li><input type="radio" name="q4" id="q4d" value="D"><label for="q4d">I reflect on the lessons I've learned through difficult times</label></li>
+											</ul>
+										</div>
+										<div class="question">
+											<h3>5. What do you prioritize when making big life decisions?</h3>
+											<ul>
+												<li><input type="radio" name="q5" id="q5a" value="A"><label for="q5a">The impact it will have on the people I care about</label></li>
+												<li><input type="radio" name="q5" id="q5b" value="B"><label for="q5b">Whether it aligns with my long-term goals</label></li>
+												<li><input type="radio" name="q5" id="q5c" value="C"><label for="q5c">How it will enhance my present experience of life</label></li>
+												<li><input type="radio" name="q5" id="q5d" value="D"><label for="q5d">How it fits into the story of my life so far</label></li>
+											</ul>
+										</div>
+										<div class="question">
+											<h3>6. When reflecting on your achievements, what gives you the most satisfaction?</h3>
+											<ul>
+												<li><input type="radio" name="q6" id="q6a" value="A"><label for="q6a">Knowing I've helped others</label></li>
+												<li><input type="radio" name="q6" id="q6b" value="B"><label for="q6b">Seeing the results of my hard work and dedication</label></li>
+												<li><input type="radio" name="q6" id="q6c" value="C"><label for="q6c">Remembering the joy I experienced during the process</label></li>
+												<li><input type="radio" name="q6" id="q6d" value="D"><label for="q6d">Understanding how my efforts have contributed to my personal journey</label></li>
+											</ul>
+										</div>
+										<div class="question">
+											<h3>7. How do you view your role in the world?</h3>
+											<ul>
+												<li><input type="radio" name="q7" id="q7a" value="A"><label for="q7a">To care for and support others</label></li>
+												<li><input type="radio" name="q7" id="q7b" value="B"><label for="q7b">To achieve my personal potential</label></li>
+												<li><input type="radio" name="q7" id="q7c" value="C"><label for="q7c">To appreciate and enhance the beauty of life</label></li>
+												<li><input type="radio" name="q7" id="q7d" value="D"><label for="q7d">To grow from my experiences and share my wisdom</label></li>
+											</ul>
+										</div>
+									</div>
+									<button id="submitQuiz">Submit Quiz</button>
+									<div id="quizResults"></div>
+								`;
+								break;
+							case 'citations':
+								content = `
+									<header>
+										<div class="title">
+											<h2>Citations</h2>
+										</div>
+									</header>
+									<p>Abbagnano, Nicola. "Existentialism." <i>Encyclopædia Britannica</i>, Encyclopædia Britannica, inc., 11 Sept. 2024, www.britannica.com/topic/existentialism.</p>
+
+									<p>Ames, Madeline. "The Importance and Benefits of Giving Back to Your Community ' EF Academy Blog ' EF Academy Blog." <i>EF Academy Blog</i>, www.ef.com/wwen/blog/efacademyblog/importance-giving-back-to-your-community/. Accessed 20 Oct. 2024.</p>
+
+									<p>Bushkin, Hanan, et al. "Searching for Meaning in Chaos: Viktor Frankl's Story." <i>Europe's Journal of Psychology</i>, U.S. National Library of Medicine, 31 Aug. 2021, pmc.ncbi.nlm.nih.gov/articles/PMC8763215/.</p>
+
+									<p>Khatri, Minesh. "Logotherapy: How It Helps You Find Purpose in Life." <i>WebMD</i>, WebMD, 16 May 2023, www.webmd.com/mental-health/what-is-logotherapy.</p>
+
+									<p>Lowe, Toby. "What Is 'Community'?" <i>Medium</i>, Centre for Public Impact, 17 May 2022, medium.com/centre-for-public-impact/what-is-community-2e895219a205.</p>
+
+									<p>Madeson, Melissa. "Logotherapy: Viktor Frankl's Theory of Meaning." <i>PositivePsychology.Com</i>, 18 Sept. 2024, positivepsychology.com/viktor-frankl-logotherapy/.</p>
+
+									<p>Sutula, Lindsay. "10 Reasons Why It's Important to Be a Part of a Community." <i>GCE Strategic Consulting</i>, GCE Strategic Consulting, 30 May 2024, gcestrategicconsulting.com/blog/reasons-to-join-community.</p>
+
+									<p>"Viktor Emil Frankl." <i>VFI – Viktor Frankl - Biography</i>, www.viktorfrankl.org/biography.html. Accessed 20 Oct. 2024.</p>
+
+									<p>"What Is Logotherapy?: Healing through Meaning." <i>The Viktor E. Frankl Institute of America</i>, The Viktor E. Frankl Institute of America, 21 May 2024, viktorfranklamerica.com/what-is-logotherapy/.</p>
+								`;
+								break;
+							default:
+								content = `
+									<div class="content-wrapper">
+										<div class="content-text">
+											<header>
+												<div class="title">
+													<h2>To what extent does community create meaning in a world with so many painful and difficult circumstances?</h2>
+												</div>
+											</header>
+											<p>Throughout history, humans have endured and inflicted great suffering, and time and time again, we have relied on our communities to find meaning and purpose during hardships. In the 21st century, humans have the easiest life on average; there are plentiful foods, resources, and unprecedented access to information. Yet, there is still much suffering in war, extreme poverty, natural disasters, and so on. In these painful and difficult circumstances, communities become essential in creating meaning for individuals.
+</p>
+											<p>Humans return to their communities in times of hardship for guidance, energy, help, and general support. Suffering is inherently isolation, so taking part in a community gives people a connection, a “reason” for their suffering, and a sense of belonging. Viktor Frankl, in his search for the meaning of life, found the importance of community and camaraderie; for many, the connection is their purpose. He saw that even in the worst circumstances, such as concentration camps, people found meaning through mutual support and shared experiences. Community provides connection and a sense of belonging, helping members avoid isolation. Connection is always important, but it becomes crucial during times of suffering. Being part of a community gives people an identity, values, meaning, and friends. Through shared purpose and identity, people overcome their suffering and realize that they are part of and contribute to something much larger. The need for friendship is so integral to the human experience that, without it, people often become depressed.
+</p>
+											<p>Communities also tend to be built around something: education, volunteering, support, or any number of other things. In times of hardship, these shared activities and goals provide individuals with a sense of purpose and direction. One issue that the world is starting to face more and more is that with advanced technology, we have less to do and fewer challenges to overcome. This means that without community, there would be much less meaning and fewer opportunities for engagement. Communities force people to think beyond their own problems and instead focus on their group or purpose. Communities compel individuals to think about the well-being of their group and contribute, shifting focus away from personal suffering and difficulties. Additionally, in times of need or crisis, communities are a built-in support system and safety net. In times of hardship, communities often come together to provide meals, financial help, or emotional support. Having this kind of supportive network is what helps people persevere through difficult times.
+</p>
+											<p>Communities also build cultural support and values, mostly positive (though sometimes negative, like the Mafia). However, there are also many incredible groups, such as Baca (Bikers Against Child Abuse), that are growing in popularity. These positive communities help shift people’s mindset (as with self-betterment groups), enhance culture, or even provide members with a sense of purpose. They help people see their suffering as part of something bigger, giving it a shared meaning that can turn personal pain into a source of strength for the whole group. These communities help to shape and shift the narratives people tell themselves about their suffering and allow them to connect with others who share similar stories. Social change often stems from communities and can lead to significant improvements in the world (e.g., women suing the state for abortion rights, community service, and creating functional art). By actively participating in a community, people can find meaning in positive efforts and growth, helping to alleviate and distract from any suffering. Communities teach people compassion, empathy, and an understanding of those around them, both within and outside of their group.
+</p>
+											<p>Community-driven empathy encourages individuals to see their pain as part of a larger human experience, offering a sense of shared meaning. Viktor Frankl spent his life trying to find and understand meaning, and he realized the crucial role of community in helping individuals find meaning even in the worst circumstances, such as concentration camps. There, in one of the worst times of suffering ever, people still found meaning in mutual support and shared experiences. Frankl found that meaning often comes from love, responsibility to others, and spiritual reflection—all of which are often a central part of communities. Communities provide a structure for individuals to engage in creative pursuits, service, and spiritual reflection, which Frankl identified as key to finding meaning in suffering. By focusing on the needs of others within the community, people tend to put aside their own suffering and instead find purpose in contributing to their community or the greater good. Engaging in a community is one of the most important keys to success and happiness for people. Even in the darkest of times, it gives people distraction, support, or routine. People without communities suffer greatly because, without connection, there is little meaning. Community is crucial to the well-being of people as well as in enduring any hardship that may come your way.
+</p>
+											<p>Communities play a big role in helping people find meaning in a world full of pain and challenges. Even during COVID-19, people though isolated, found meaning in a community in all sorts of meaningful ways. People went online, left art for others to find, or even made deeper connections within their families. By giving people connection, purpose, and a sense of belonging, communities help them understand their struggles and find reasons to keep going. The shared experiences and support in communities turn personal hardships into sources of strength and purpose, showing how important communities are in our lives.
+</p>
+											<p><i>“There is nothing in the world, I venture to say, that would so effectively help one to survive even the worst conditions as the knowledge that there is a meaning in one’s life.” <i></p>
+											<p><i> – Viktor Frankl.
+<i><p>
+										</div>
+										<div class="content-image">
+											<img src="assets/images/viktor_frankl.jpg" alt="Viktor E. Frankl">
+											<p class="image-caption">Viktor E. Frankl</p>
+										</div>
+									</div>
+								`;
+						}
+						contentArea.innerHTML = content;
+					}
+
+					// Add this code after the loadContent function
+					function calculateQuizResults() {
+						const answers = {A: 0, B: 0, C: 0, D: 0};
+						const questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7'];
+						
+						questions.forEach(q => {
+							const selected = document.querySelector(`input[name="${q}"]:checked`);
+							if (selected) {
+								answers[selected.value]++;
+							}
+						});
+
+						const max = Math.max(...Object.values(answers));
+						const result = Object.keys(answers).find(key => answers[key] === max);
+
+						const resultMessages = {
+							A: "Connection and Compassion drives you the most! Look for meaning in this area of your life.",
+							B: "Purpose and Goals drives you the most! Look for meaning in this area of your life.",
+							C: "Presence and Beauty drives you the most! Look for meaning in this area of your life.",
+							D: "Reflection and Growth drives you the most! Look for meaning in this area of your life."
+						};
+
+						return resultMessages[result] || "Please answer all questions to see your result.";
+					}
+
+					// Modify the event listener for nav links
+					navLinks.forEach(link => {
+						link.addEventListener('click', function(e) {
+							e.preventDefault();
+							const page = this.getAttribute('data-page');
+							loadContent(page);
+
+							if (page === 'discover') {
+								setTimeout(() => {
+									const submitButton = document.getElementById('submitQuiz');
+									if (submitButton) {
+										submitButton.addEventListener('click', () => {
+											const result = calculateQuizResults();
+											document.getElementById('quizResults').innerHTML = `<p>${result}</p>`;
+										});
+									}
+								}, 100);
+							}
+						});
+					});
+
+					// Load default content
+					loadContent('');
+				});
+			</script>
+
+	</body>
+</html>
